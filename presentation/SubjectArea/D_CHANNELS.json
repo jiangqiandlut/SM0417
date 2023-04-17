@@ -1,0 +1,40 @@
+{
+  "presentationTable" : {
+    "name" : "D_CHANNELS",
+    "presentationColumns" : [ {
+      "name" : "CHANNEL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_ID"
+    }, {
+      "name" : "CHANNEL_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_DESC"
+    }, {
+      "name" : "CHANNEL_CLASS",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_CLASS"
+    }, {
+      "name" : "CHANNEL_CLASS_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_CLASS_ID"
+    }, {
+      "name" : "CHANNEL_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_TOTAL"
+    }, {
+      "name" : "CHANNEL_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CHANNELS.CHANNEL_TOTAL_ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:BusinessModel.D_CHANNELS",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CHANNELS.Total"
+      }, {
+        "name" : "Class",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CHANNELS.Class",
+        "displayColumn" : "presentationColumn:SubjectArea.D_CHANNELS.CHANNEL_CLASS"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CHANNELS.Detail",
+        "displayColumn" : "presentationColumn:SubjectArea.D_CHANNELS.CHANNEL_DESC"
+      } ]
+    } ]
+  }
+}

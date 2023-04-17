@@ -1,0 +1,92 @@
+{
+  "presentationTable" : {
+    "name" : "D_PRODUCTS",
+    "presentationColumns" : [ {
+      "name" : "PROD_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_ID"
+    }, {
+      "name" : "PROD_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_NAME"
+    }, {
+      "name" : "PROD_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_DESC"
+    }, {
+      "name" : "PROD_SUBCATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_SUBCATEGORY"
+    }, {
+      "name" : "PROD_SUBCATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_SUBCATEGORY_ID"
+    }, {
+      "name" : "PROD_SUBCATEGORY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_SUBCATEGORY_DESC"
+    }, {
+      "name" : "PROD_CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_CATEGORY"
+    }, {
+      "name" : "PROD_CATEGORY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_CATEGORY_ID"
+    }, {
+      "name" : "PROD_CATEGORY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_CATEGORY_DESC"
+    }, {
+      "name" : "PROD_WEIGHT_CLASS",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_WEIGHT_CLASS"
+    }, {
+      "name" : "PROD_UNIT_OF_MEASURE",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_UNIT_OF_MEASURE"
+    }, {
+      "name" : "PROD_PACK_SIZE",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_PACK_SIZE"
+    }, {
+      "name" : "SUPPLIER_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.SUPPLIER_ID"
+    }, {
+      "name" : "PROD_STATUS",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_STATUS"
+    }, {
+      "name" : "PROD_LIST_PRICE",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_LIST_PRICE"
+    }, {
+      "name" : "PROD_MIN_PRICE",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_MIN_PRICE"
+    }, {
+      "name" : "PROD_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_TOTAL"
+    }, {
+      "name" : "PROD_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_TOTAL_ID"
+    }, {
+      "name" : "PROD_SRC_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_SRC_ID"
+    }, {
+      "name" : "PROD_EFF_FROM",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_EFF_FROM"
+    }, {
+      "name" : "PROD_EFF_TO",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_EFF_TO"
+    }, {
+      "name" : "PROD_VALID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_PRODUCTS.PROD_VALID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:BusinessModel.D_PRODUCTS",
+      "levels" : [ {
+        "name" : "Prod Total",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_PRODUCTS.Prod Total"
+      }, {
+        "name" : "Prod Category",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_PRODUCTS.Prod Category",
+        "displayColumn" : "presentationColumn:SubjectArea.D_PRODUCTS.PROD_CATEGORY"
+      }, {
+        "name" : "Prod Subcategory",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_PRODUCTS.Prod Subcategory",
+        "displayColumn" : "presentationColumn:SubjectArea.D_PRODUCTS.PROD_SUBCATEGORY"
+      }, {
+        "name" : "Prod Detail",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_PRODUCTS.Prod Detail",
+        "displayColumn" : "presentationColumn:SubjectArea.D_PRODUCTS.PROD_NAME"
+      } ]
+    } ]
+  }
+}

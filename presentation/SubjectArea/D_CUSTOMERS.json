@@ -1,0 +1,56 @@
+{
+  "presentationTable" : {
+    "name" : "D_CUSTOMERS",
+    "presentationColumns" : [ {
+      "name" : "CUST_TOTAL",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_TOTAL"
+    }, {
+      "name" : "CUST_TOTAL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_TOTAL_ID"
+    }, {
+      "name" : "CUST_STATE_PROVINCE",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_STATE_PROVINCE"
+    }, {
+      "name" : "CUST_STATE_PROVINCE_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_STATE_PROVINCE_ID"
+    }, {
+      "name" : "CUST_CITY",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_CITY"
+    }, {
+      "name" : "CUST_CITY_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_CITY_ID"
+    }, {
+      "name" : "CUST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_NAME"
+    }, {
+      "name" : "CUST_FIRST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_FIRST_NAME"
+    }, {
+      "name" : "CUST_LAST_NAME",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_LAST_NAME"
+    }, {
+      "name" : "CUST_ID",
+      "sourceLogicalColumn" : "logicalColumn:BusinessModel.D_CUSTOMERS.CUST_ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:BusinessModel.D_CUSTOMERS",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CUSTOMERS.Total"
+      }, {
+        "name" : "State",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CUSTOMERS.State",
+        "displayColumn" : "presentationColumn:SubjectArea.D_CUSTOMERS.CUST_STATE_PROVINCE"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CUSTOMERS.City",
+        "displayColumn" : "presentationColumn:SubjectArea.D_CUSTOMERS.CUST_CITY"
+      }, {
+        "name" : "Cust Detail",
+        "sourceLogicalLevel" : "logicalLevel:BusinessModel.D_CUSTOMERS.Cust Detail",
+        "displayColumn" : "presentationColumn:SubjectArea.D_CUSTOMERS.CUST_NAME"
+      } ]
+    } ]
+  }
+}
